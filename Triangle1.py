@@ -15,7 +15,7 @@ def classifyTriangle(a, b, c):
         return 'Equilateral'
     elif (a**2 + b**2 == c**2) or (b**2 + c**2 == a**2) or (a**2 + c**2 == b**2):
         return 'Right'
-    elif a != b != c != a:  # Corrected condition for scalene triangles
+    elif a !=b and b !=c and a !=c:  # Corrected condition for scalene triangles
         return 'Scalene'
     else:
         return 'Isosceles'
